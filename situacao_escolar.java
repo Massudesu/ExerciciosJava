@@ -17,7 +17,7 @@ void main() {
     double media = (n1 + n2 + n3 + n4) / 4;
 
     char conceito;
-    String situacao;
+    
 
     if (media >= 9.0 && media <= 10.0) {
         conceito = 'A';
@@ -30,7 +30,9 @@ void main() {
     } else {
         conceito = 'E';
     }
-
+    
+    String situacao;
+    
     if (conceito == 'A' || conceito == 'B' || conceito == 'C') {
         situacao = "APROVADO";
     } else {
