@@ -10,7 +10,6 @@ void main() {
     println("6.Radiciação");
     println("7.Número par");
     println("8.Número impar");
-    println("9.Sair");
 
 
     String escolha = IO.readln();
@@ -68,25 +67,33 @@ void main() {
         println("--------------------------------------------------------------");
     }
     if (escolha.equals("7")){
-        print("Número: ");
+        print("Primeiro número: ");
         int n1 = Integer.parseInt(IO.readln());
-        if (n1 % 2 ==0) {
-            println(n1 + " é par!");
+        print("Segundo número: ");
+        int n2 = Integer.parseInt(IO.readln());
+        int n3 = n1+n2;
+
+        if (n3 % 2 ==0) {
+            println(n3 + " é par!");
             println("--------------------------------------------------------------");
         }else{
-            println(n1 + " não é par!");
+            println(n3 + " não é par!");
             println("--------------------------------------------------------------");
         }
 
     }
     if (escolha.equals("8")){
-        print("Número: ");
+        print("Primeiro número: ");
         int n1 = Integer.parseInt(IO.readln());
-        if (n1 % 2 ==1) {
-            println(n1 + " é impar!");
+        print("Segundo número: ");
+        int n2 = Integer.parseInt(IO.readln());
+        int n3 = n1+n2;
+
+        if (n3 % 2 ==1) {
+            println(n3 + " é impar!");
             println("--------------------------------------------------------------");
         }else{
-            println(n1 + " não é impar!");
+            println(n3 + " não é impar!");
             println("--------------------------------------------------------------");
         }
     }
